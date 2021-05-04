@@ -1,0 +1,16 @@
+[36m12:28:00.625[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mio.micronaut.runtime.Micronaut[0;39m - Startup completed in 6470ms. Server Running: http://localhost:8080
+[36m12:28:03.060[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.c.i.YahooFinanceControllerImpl[0;39m - Calling the YahooService in batchMode
+[36m12:28:03.061[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Converting List to Array
+[36m12:28:03.061[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Calling Yahoo API with list parameter
+[36m12:28:03.208[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35my.quotes.query1v7.QuotesRequest[0;39m - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOGL%2CINTC%2CTSLA%2CAAPL
+[36m12:28:03.957[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Getting the Map from  YAHOO API
+[36m12:28:03.959[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Iterating through MAP and populating its element to JSON Object
+[36m12:28:03.959[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Iterating through MAP and populating its element to JSON Object
+[36m12:28:03.959[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Iterating through MAP and populating its element to JSON Object
+[36m12:28:03.959[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Iterating through MAP and populating its element to JSON Object
+[36m12:28:03.959[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Returning the JSON API
+[36m12:28:10.570[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.c.i.YahooFinanceControllerImpl[0;39m - Calling the YahooService in singleMode
+[36m12:28:10.595[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Will call API og YAHOO
+[36m12:28:10.596[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35my.quotes.query1v7.QuotesRequest[0;39m - Sending request: https://query1.finance.yahoo.com/v7/finance/quote?symbols=GOOGL
+[36m12:28:10.977[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Get the response from Yahoo API
+[36m12:28:10.977[0;39m [1;30m[default-nioEventLoopGroup-1-3][0;39m [34mINFO [0;39m [35mc.e.s.i.YahooFinanceApiServiceImpl[0;39m - Put the price tho JSONObject

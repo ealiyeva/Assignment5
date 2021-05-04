@@ -1,0 +1,34 @@
+[36m22:51:40.956[0;39m [1;30m[main][0;39m [1;31mERROR[0;39m [35mio.micronaut.runtime.Micronaut[0;39m - Error starting Micronaut server: Error loading bean [io.micronaut.http.server.netty.binders.NettyBinderRegistrar]: io/micronaut/http/server/HttpServerConfiguration
+io.micronaut.context.exceptions.BeanContextException: Error loading bean [io.micronaut.http.server.netty.binders.NettyBinderRegistrar]: io/micronaut/http/server/HttpServerConfiguration
+	at io.micronaut.context.DefaultBeanContext.lambda$findBeanCandidates$36(DefaultBeanContext.java:1724)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.micronaut.context.DefaultBeanContext.findBeanCandidates(DefaultBeanContext.java:1734)
+	at io.micronaut.context.DefaultApplicationContext.findBeanCandidates(DefaultApplicationContext.java:224)
+	at io.micronaut.context.DefaultBeanContext.findBeanCandidatesInternal(DefaultBeanContext.java:2879)
+	at io.micronaut.context.DefaultBeanContext.getBeanDefinitions(DefaultBeanContext.java:698)
+	at io.micronaut.context.DefaultBeanContext.initializeEventListeners(DefaultBeanContext.java:1453)
+	at io.micronaut.context.DefaultBeanContext.readAllBeanDefinitionClasses(DefaultBeanContext.java:2856)
+	at io.micronaut.context.DefaultBeanContext.start(DefaultBeanContext.java:231)
+	at io.micronaut.context.DefaultApplicationContext.start(DefaultApplicationContext.java:165)
+	at io.micronaut.runtime.Micronaut.start(Micronaut.java:71)
+	at io.micronaut.runtime.Micronaut.run(Micronaut.java:311)
+	at io.micronaut.runtime.Micronaut.run(Micronaut.java:297)
+	at com.example.Application.main(Application.java:8)
+Caused by: java.lang.NoClassDefFoundError: io/micronaut/http/server/HttpServerConfiguration
+	at io.micronaut.http.server.netty.binders.$NettyBinderRegistrarDefinition.<init>(Unknown Source)
+	at io.micronaut.http.server.netty.binders.$NettyBinderRegistrarDefinitionClass.load(Unknown Source)
+	at io.micronaut.context.AbstractBeanDefinitionReference.load(AbstractBeanDefinitionReference.java:62)
+	at io.micronaut.context.DefaultBeanContext.lambda$findBeanCandidates$36(DefaultBeanContext.java:1722)
+	... 20 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.micronaut.http.server.HttpServerConfiguration
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 24 common frames omitted
